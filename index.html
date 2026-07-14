@@ -1,623 +1,427 @@
-<!DOCTYPE html>
-<html lang="tr">
+<!doctype html>
+<html dir="ltr" lang="tr-TR" prefix="og: https://ogp.me/ns#">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Terapi Masaj Salonu | Mardin Artuklu SPA & Terapi Merkezi</title>
-  <meta name="keywords" content="Terapi Masaj Salonu, Mardin Masaj, Artuklu SPA, Mardin Masaj Salonu, Mardin Masaj Salonları, Profesyonel Masaj Mardin, Mardin Kese Köpük, 13 Mart Mahallesi Masaj" />
-  <meta name="description" content="Terapi Mardin Masaj ve SPA Salonu. Geleneksel ve modern masaj terapileri, kese köpük banyosu ve VIP masaj hizmetleri. Bilgi ve rezervasyon için hemen bizimle iletişime geçin!" />
-
-  <meta name="googlebot" content="index, follow" />
-  <meta name="robots" content="index, follow, all" />
-  <meta name="revisit-after" content="1 days">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+ 
+  <title>Diş Hekimi İbrahim Garip | Şanlıurfa Haliliye Diş Hekimi</title>
+  <meta name="description" content="Şanlıurfa Haliliye'de diş implantı, zirkonyum kaplama, gülüş tasarımı, çene cerrahisi ve kanal tedavisi alanlarında uzman hekimimiz İbrahim Garip ile iletişime geçin." />
+  <meta name="robots" content="max-image-preview:large" />
+  <link rel="canonical" href="https://ibrahimgarip.com/" />
   
-  <meta property="og:title" content="Terapi Masaj Salonu - Mardin Artuklu" />
-  <meta property="og:description" content="13 Mart Mahallesi'nde profesyonel masaj, lüks hizmet konsepti ve VIP terapi seansları." />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:site_name" content="Diş Hekimi İbrahim Garip" />
   <meta property="og:type" content="website" />
+  <meta property="og:title" content="Diş Hekimi İbrahim Garip | Şanlıurfa Haliliye Diş Hekimi" />
+  <meta property="og:description" content="Şanlıurfa Haliliye'de profesyonel diş tedavileri ve estetik gülüş tasarımı hizmetleri." />
+  <meta property="og:url" content="https://ibrahimgarip.com/" />
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
   
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   <style>
-    *{margin:0;padding:0;box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{font-family:'Montserrat',sans-serif;background:#fff;color:#2a2a2a;overflow-x:hidden}
-    a{text-decoration:none;color:inherit}
-    img{max-width:100%;display:block}
-
-    /* ===== NAVBAR ===== */
-    .navbar{
-      position:fixed;top:0;left:0;right:0;z-index:1000;
-      padding:18px 40px;
-      display:flex;align-items:center;justify-content:space-between;
-      transition:all 0.4s;
-    }
-    .navbar.scrolled{
-      background:rgba(255,255,255,0.97);
-      backdrop-filter:blur(20px);
-      padding:12px 40px;
-      box-shadow:0 2px 20px rgba(0,0,0,0.08);
-    }
-    .nav-logo{display:flex;align-items:center;gap:10px}
-    .nav-logo-text{
-      font-family:'Montserrat',sans-serif;font-weight:900;
-      font-size:24px;letter-spacing:4px;color:#fff;
-      transition:color 0.4s;
-    }
-    .navbar.scrolled .nav-logo-text{color:#baa27a}
-    .nav-logo-sub{
-      font-size:9px;font-weight:500;letter-spacing:4px;
-      color:rgba(255,255,255,0.7);text-transform:uppercase;
-      margin-top:-2px;transition:color 0.4s;
-    }
-    .navbar.scrolled .nav-logo-sub{color:#666}
+    /* ===== GENEL RESET VE TEMA DEĞİŞKENLERİ ===== */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body { font-family: 'Montserrat', sans-serif; background: #fff; color: #2d353c; line-height: 1.6; }
+    a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
     
-    .nav-links{display:flex;gap:32px;align-items:center}
-    .nav-links a{
-      font-size:12px;font-weight:600;letter-spacing:2px;
-      text-transform:uppercase;color:rgba(255,255,255,0.8);
-      transition:color 0.3s;position:relative;
+    :root {
+      --primary: #464F5B;
+      --accent: #CBA462;
+      --accent-hover: #AA820A;
+      --bg-dark: #232B31;
+      --bg-soft: #F8FAFC;
+      --white: #ffffff;
+      --text-muted: #64748B;
     }
-    .navbar.scrolled .nav-links a{color:rgba(0,0,0,0.65)}
-    .nav-links a::after{
-      content:'';position:absolute;bottom:-4px;left:0;
-      width:0;height:1.5px;background:#baa27a;
-      transition:width 0.3s;
+
+    /* ===== PLACEHOLDER FOTOĞRAFLAR İÇİN %100 UYUM KATMANI ===== */
+    .demo-img-placeholder {
+      width: 100%;
+      height: 100%;
+      min-height: 250px;
+      background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #64748b;
+      font-size: 14px;
+      font-weight: 600;
+      gap: 10px;
+      border-radius: 12px;
+      border: 2px dashed #94a3b8;
     }
-    .nav-links a:hover{color:#fff}
-    .navbar.scrolled .nav-links a:hover{color:#baa27a}
-    .nav-links a:hover::after{width:100%}
+    .demo-img-placeholder i { font-size: 42px; color: #94a3b8; }
+
+    /* ===== NAVBAR VE ÜST BAR ===== */
+    .top-bar {
+      background-color: var(--primary);
+      color: rgba(255,255,255,0.8);
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      font-family: 'DM Sans', sans-serif;
+    }
+    .top-info { display: flex; gap: 24px; flex-wrap: wrap; }
+    .top-info a:hover { color: var(--accent); }
+    .top-social a { margin-left: 15px; font-size: 14px; color: rgba(255,255,255,0.7); }
+    .top-social a:hover { color: var(--accent); }
+
+    .navbar {
+      background: var(--white);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo-text h1 { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: var(--primary); }
+    .logo-text span { color: var(--accent); font-size: 11px; display: block; letter-spacing: 3px; font-weight: 700; font-family: 'Montserrat', sans-serif; }
     
-    .nav-cta{
-      background:linear-gradient(135deg,#25d366,#20ba5a);
-      color:#fff !important;padding:10px 24px;border-radius:30px;
-      font-size:11px !important;font-weight:700 !important;
-      letter-spacing:1.5px;
-      box-shadow:0 4px 20px rgba(37,211,102,0.3);
-      transition:all 0.3s !important;
+    .nav-links { display: flex; gap: 30px; align-items: center; }
+    .nav-links a { font-size: 14px; font-weight: 600; color: var(--primary); }
+    .nav-links a:hover { color: var(--accent); }
+    
+    .nav-cta {
+      background: var(--accent);
+      color: var(--white) !important;
+      padding: 12px 28px;
+      border-radius: 4px;
+      font-weight: 700;
+      box-shadow: 0 4px 15px rgba(203,164,98,0.2);
     }
-    .nav-cta::after{display:none !important}
-    .nav-cta:hover{transform:translateY(-2px);box-shadow:0 6px 25px rgba(37,211,102,0.5)}
+    .nav-cta:hover { background: var(--primary); transform: translateY(-2px); }
 
-    .menu-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:1001;padding:4px}
-    .menu-toggle span{width:24px;height:2px;background:#fff;transition:all 0.3s;border-radius:2px}
-    .navbar.scrolled .menu-toggle span{background:#333}
-    .menu-toggle.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
-    .menu-toggle.active span:nth-child(2){opacity:0}
-    .menu-toggle.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+    /* ===== HERO ALANI ===== */
+    .hero {
+      background: linear-gradient(135deg, #333c47 0%, #1e242b 100%);
+      padding: 100px 40px;
+      color: var(--white);
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+    .hero-text h5 { color: var(--accent); font-size: 16px; letter-spacing: 3px; margin-bottom: 15px; font-family: 'Montserrat', sans-serif; }
+    .hero-text h2 { font-family: 'Playfair Display', serif; font-size: 54px; line-height: 1.2; margin-bottom: 25px; }
+    .hero-text p { color: rgba(255,255,255,0.7); font-size: 16px; margin-bottom: 35px; max-width: 550px; }
+    
+    /* ===== SEKSİYON ORTAK DÜZENİ ===== */
+    .section { padding: 90px 40px; }
+    .section-bg { background-color: var(--bg-soft); }
+    .section-header { text-align: center; max-width: 700px; margin: 0 auto 60px; }
+    .section-badge { color: var(--accent); font-size: 13px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 10px; display: block; }
+    .section-title { font-family: 'Playfair Display', serif; font-size: 38px; color: var(--primary); }
 
-    /* ===== HERO ===== */
-    .hero{
-      position:relative;
-      height:100vh;min-height:700px;
-      display:flex;align-items:center;justify-content:center;
-      overflow:hidden;
+    /* ===== HAKKIMIZDA BÖLÜMÜ ===== */
+    .about-wrapper { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: center; max-width: 1200px; margin: 0 auto; }
+    .about-img-box { position: relative; }
+    .experience-badge {
+      position: absolute; bottom: -20px; right: -20px;
+      background: var(--accent); color: var(--white);
+      padding: 20px; border-radius: 8px; text-align: center;
+      box-shadow: 0 10px 30px rgba(203,164,98,0.3);
     }
-    .hero-bg{
-      position:absolute;inset:0;
-      background:url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1600&q=85') center/cover no-repeat;
-    }
-    .hero-bg::after{
-      content:'';position:absolute;inset:0;
-      background:linear-gradient(135deg,rgba(18,20,19,0.92) 0%,rgba(40,35,30,0.8) 50%,rgba(18,20,19,0.88) 100%);
-    }
-    .hero-content{
-      position:relative;z-index:2;
-      text-align:center;
-      max-width:800px;padding:0 30px;
-    }
-    .hero-badge{
-      display:inline-block;
-      border:1px solid rgba(186,162,122,0.4);
-      padding:8px 24px;border-radius:30px;
-      font-size:11px;font-weight:600;letter-spacing:4px;
-      color:rgba(186,162,122,0.9);text-transform:uppercase;
-      margin-bottom:28px;
-      backdrop-filter:blur(4px);
-      background:rgba(186,162,122,0.05);
-    }
-    .hero-title{
-      font-family:'Montserrat',sans-serif;
-      font-weight:900;font-size:68px;letter-spacing:8px;
-      color:#fff;line-height:1.1;margin-bottom:12px;
-      text-shadow:0 0 40px rgba(186,162,122,0.3);
-    }
-    .hero-subtitle{
-      font-family:'Montserrat',sans-serif;
-      font-weight:600;font-size:16px;letter-spacing:10px;
-      color:rgba(255,255,255,0.6);text-transform:uppercase;
-      margin-bottom:40px;
-    }
-    .hero-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
-    .btn-primary{
-      background:linear-gradient(135deg,#25d366,#20ba5a);
-      color:#fff;padding:16px 40px;border-radius:50px;
-      font-family:'Montserrat',sans-serif;font-weight:700;
-      font-size:13px;letter-spacing:2px;text-transform:uppercase;
-      box-shadow:0 6px 30px rgba(37,211,102,0.35);
-      transition:all 0.3s;display:inline-flex;align-items:center;gap:8px;
-    }
-    .btn-primary:hover{transform:translateY(-3px);box-shadow:0 10px 40px rgba(37,211,102,0.5)}
-    .btn-outline{
-      border:2px solid rgba(255,255,255,0.25);
-      color:#fff;padding:14px 38px;border-radius:50px;
-      font-family:'Montserrat',sans-serif;font-weight:600;
-      font-size:13px;letter-spacing:2px;text-transform:uppercase;
-      transition:all 0.3s;display:inline-flex;align-items:center;gap:8px;
-      background:rgba(255,255,255,0.03);
-    }
-    .btn-outline:hover{border-color:rgba(186,162,122,0.5);background:rgba(186,162,122,0.08)}
+    .experience-badge h4 { font-size: 36px; font-weight: 800; line-height: 1; }
+    .experience-badge p { font-size: 12px; font-weight: 600; text-transform: uppercase; margin-top: 5px; }
+    
+    .about-text h3 { font-family: 'Playfair Display', serif; font-size: 32px; margin-bottom: 20px; }
+    .about-text p { color: var(--text-muted); font-size: 15px; margin-bottom: 20px; }
 
-    /* ===== SECTION DÜZENİ ===== */
-    .section{padding:100px 0;position:relative}
-    .section-dark{background:#fff}
-    .section-darker{background:#fbf9f6}
-    .container{max-width:1200px;margin:0 auto;padding:0 40px}
-    .section-header{text-align:center;margin-bottom:60px}
-    .section-label{
-      font-size:11px;font-weight:700;letter-spacing:5px;
-      text-transform:uppercase;color:#baa27a;margin-bottom:16px;
-      display:block;
-    }
-    .section-title{
-      font-family:'Cormorant Garamond',serif;
-      font-weight:400;font-size:46px;color:#2a2a2a;
-      line-height:1.2;margin-bottom:16px;
-    }
-    .section-line{
-      width:60px;height:1.5px;
-      background:linear-gradient(90deg,transparent,#baa27a,transparent);
-      margin:0 auto;
-    }
+    /* ===== TEDAVİLER KARTLARI ===== */
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; max-width: 1200px; margin: 0 auto; }
+    .treatment-card { background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.02); border: 1px solid #e2e8f0; transition: all 0.3s; }
+    .treatment-card:hover { transform: translateY(-5px); box-shadow: 0 15px 40px rgba(203,164,98,0.15); }
+    .treatment-img { height: 200px; position: relative; }
+    .treatment-body { padding: 25px; text-align: center; }
+    .treatment-body h4 { font-family: 'Playfair Display', serif; font-size: 22px; margin-bottom: 12px; color: var(--primary); }
+    .treatment-body p { color: var(--text-muted); font-size: 14px; margin-bottom: 20px; }
+    .treatment-link { color: var(--accent); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+    .treatment-link:hover { color: var(--primary); }
 
-    /* ===== SERVICES GRID ===== */
-    .services-grid{
-      display:grid;grid-template-columns:repeat(3,1fr);gap:28px;
-    }
-    .service-card{
-      background:#fff;
-      border-radius:24px;
-      text-align:center;transition:all 0.4s;
-      position:relative;overflow:hidden;
-      box-shadow:0 4px 30px rgba(0,0,0,0.03);
-      border: 1px solid #ebf0f5;
-    }
-    .service-card:hover {
-      transform:translateY(-10px);
-      box-shadow:0 20px 50px rgba(186,162,122,0.15);
-    }
-    .service-card .svc-img{
-      width:100%;height:220px;overflow:hidden;position:relative;
-      background-color: #2c2925;
-      display: flex;align-items: center;justify-content: center;
-    }
-    .service-card .svc-img i {
-      font-size: 64px; color: rgba(255,255,255,0.2);
-    }
-    .service-card .svc-body{padding:28px 24px 32px}
-    .service-card .svc-icon{
-      width:56px;height:56px;margin:-52px auto 16px;
-      border-radius:50%;position:relative;z-index:2;
-      background:linear-gradient(135deg,#25d366,#20ba5a);
-      display:flex;align-items:center;justify-content:center;
-      box-shadow:0 6px 20px rgba(37,211,102,0.35);
-      border:3px solid #fff;
-    }
-    .service-card .svc-icon i{font-size:20px; color:#fff}
-    .service-card h3{
-      font-family:'Cormorant Garamond',serif;font-weight:700;
-      font-size:26px;color:#2a2a2a;margin-bottom:12px;
-    }
-    .service-card p{
-      font-size:13.5px;color:#666;
-      line-height:1.7;margin-bottom:20px;height: 70px;
-    }
-    .service-card .svc-price{
-      font-family:'Montserrat',sans-serif;font-weight:900;
-      font-size:32px;color:#baa27a;margin-bottom:4px;
-    }
-    .service-card .svc-note{
-      font-size:11px;color:#aaa;letter-spacing:1px;
-      margin-bottom:4px;
-    }
-    .service-card .svc-btn{
-      display:inline-block;margin-top:18px;
-      padding:12px 32px;border-radius:30px;
-      background:linear-gradient(135deg,#25d366,#20ba5a);
-      font-size:11px;font-weight:700;letter-spacing:2px;
-      text-transform:uppercase;color:#fff;
-      transition:all 0.3s;
-      box-shadow:0 4px 15px rgba(37,211,102,0.25);
-      border:none;
-    }
-    .service-card .svc-btn:hover{
-      transform:translateY(-2px);
-      box-shadow:0 6px 25px rgba(37,211,102,0.4);
-    }
+    /* ===== YORUMLAR (TESTIMONIALS) ===== */
+    .testimonials { background-color: var(--primary); color: var(--white); text-align: center; }
+    .testi-icon { color: var(--accent); font-size: 46px; margin-bottom: 25px; opacity: 0.5; }
+    .testi-text { font-family: 'Playfair Display', serif; font-size: 22px; font-style: italic; max-width: 800px; margin: 0 auto 30px; font-weight: 400; line-height: 1.5; }
+    .testi-author { font-size: 16px; font-weight: 700; color: var(--accent); letter-spacing: 1px; }
 
-    /* ===== SPECIAL RITUELS AREA ===== */
-    .special-section{
-      background:#fbf9f6;
-      position:relative;overflow:hidden;
-      padding:100px 0;
-    }
-    .special-inner{
-      display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;
-      position:relative;z-index:1;
-    }
-    .special-image{
-      border-radius:20px;overflow:hidden;
-      height:450px;position:relative;
-      box-shadow:0 20px 50px rgba(0,0,0,0.08);
-      background: linear-gradient(135deg, #121413, #2c2925);
-      display: flex; align-items: center; justify-content: center;
-    }
-    .special-image i{font-size:120px; color:rgba(255,255,255,0.08)}
-    .special-image .special-ribbon{
-      position:absolute;top:20px;left:0;z-index:2;
-      background:linear-gradient(135deg,#baa27a,#99835d);
-      color:#fff;font-family:'Montserrat',sans-serif;
-      font-weight:800;font-size:11px;letter-spacing:2px;
-      padding:10px 24px;
-      border-radius:0 8px 8px 0;
-      box-shadow:0 4px 15px rgba(186,162,122,0.3);
-      text-transform:uppercase;
-    }
-    .special-info .special-label{
-      display:inline-block;
-      font-size:11px;font-weight:700;letter-spacing:4px;
-      text-transform:uppercase;color:#baa27a;margin-bottom:16px;
-    }
-    .special-info h2{
-      font-family:'Cormorant Garamond',serif;
-      font-weight:600;font-size:44px;color:#2a2a2a;
-      line-height:1.2;margin-bottom:15px;
-    }
-    .special-features{list-style:none;margin-bottom:32px}
-    .special-features li{
-      padding:12px 0;
-      border-bottom:1px solid rgba(0,0,0,0.06);
-      font-size:15px;color:#555;font-weight:500;
-      display:flex;align-items:center;gap:12px;
-    }
-    .special-features li .feat-check{
-      width:24px;height:24px;border-radius:50%;flex-shrink:0;
-      background:linear-gradient(135deg,#25d366,#20ba5a);
-      display:flex;align-items:center;justify-content:center;
-    }
-    .special-features li .feat-check i{
-      font-size:11px;color:#fff;
-    }
+    /* ===== KLİNİK GALERİSİ ===== */
+    .gallery-grid { display: grid; grid-template-columns: 1.2fr repeat(2, 1fr); gap: 20px; max-width: 1200px; margin: 0 auto; }
+    .gallery-header-box { background: var(--white); border: 1px solid #e2e8f0; border-radius: 12px; padding: 40px; display: flex; flex-direction: column; justify-content: center; }
+    .gallery-item { height: 260px; border-radius: 12px; overflow: hidden; }
 
-    /* ===== CONTACT METHOD STRIP ===== */
-    .contact-strip{
-      display:grid;grid-template-columns:repeat(3,1fr);
-      border-top:1px solid rgba(0,0,0,0.06);
-      background:#fbf9f6;
-    }
-    .contact-item{
-      padding:50px 40px;text-align:center;
-      border-right:1px solid rgba(0,0,0,0.06);
-      transition:background 0.3s;
-    }
-    .contact-item:last-child{border-right:none}
-    .contact-item:hover{background:rgba(186,162,122,0.04)}
-    .contact-item i{
-      font-size:26px;color:#baa27a;margin-bottom:16px;display:block;
-    }
-    .contact-item h4{
-      font-family:'Cormorant Garamond',serif;
-      font-size:22px;font-weight:600;color:#2a2a2a;margin-bottom:8px;
-    }
-    .contact-item p{font-size:13.5px;color:#666;line-height:1.6}
+    /* ===== İLETİŞİM & HARİTA ALANI ===== */
+    .contact-wrapper { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; max-width: 1200px; margin: 0 auto; align-items: start; }
+    .contact-details h3 { font-family: 'Playfair Display', serif; font-size: 32px; margin-bottom: 20px; }
+    .contact-method { display: flex; gap: 20px; margin-bottom: 30px; align-items: flex-start; }
+    .contact-icon { width: 50px; height: 50px; background-color: rgba(203,164,98,0.1); color: var(--accent); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
+    .contact-info h4 { font-size: 16px; font-weight: 700; margin-bottom: 5px; }
+    .contact-info p { color: var(--text-muted); font-size: 14px; }
+    .map-box { border-radius: 16px; overflow: hidden; height: 400px; box-shadow: 0 15px 40px rgba(0,0,0,0.06); border: 1px solid #e2e8f0; }
+    .map-box iframe { width: 100%; height: 100%; border: none; }
 
-    /* ===== FOOTER ===== */
-    .footer{
-      background:#121413;
-      padding:60px 0 30px;
-      border-top:1px solid rgba(0,0,0,0.06);
-      color:#fff;
-    }
-    .footer-inner{
-      display:flex;justify-content:space-between;align-items:center;
-      flex-wrap:wrap;gap:30px;
-    }
-    .footer-logo-text{
-      font-family:'Montserrat',sans-serif;font-weight:900;
-      font-size:22px;letter-spacing:4px;color:#baa27a;
-    }
-    .footer-logo-sub{
-      font-size:8px;font-weight:500;letter-spacing:3px;
-      color:#888;text-transform:uppercase;margin-top:-2px;
-    }
-    .footer-text{font-size:13px;color:#aaa}
-    .footer-bottom{
-      margin-top:40px;padding-top:24px;
-      border-top:1px solid rgba(255,255,255,0.05);
-      display:flex;justify-content:between;align-items:center;
-      flex-wrap:wrap;gap:16px;
-    }
-    .copyright{font-size:12px;color:#666}
+    /* ===== FOOTER ALANI ===== */
+    .footer { background-color: var(--bg-dark); color: var(--white); padding: 80px 40px 30px; }
+    .footer-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; max-width: 1200px; margin: 0 auto 50px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 50px; }
+    .footer-col h4 { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--white); margin-bottom: 25px; letter-spacing: 1px; }
+    .footer-links { list-style: none; }
+    .footer-links li { margin-bottom: 12px; font-size: 14px; color: #a3a2a2; }
+    .footer-links a:hover { color: var(--accent); }
+    .footer-bottom { text-align: center; font-size: 13px; color: #666666; max-width: 1200px; margin: 0 auto; }
 
-    /* ===== FLOATING AND MOBILE STICKY SUPPORTS ===== */
-    .sticky-support{
-      position:fixed;bottom:0;left:0;right:0;z-index:999;
-      background:rgba(18,20,19,0.98);backdrop-filter:blur(15px);
-      padding:12px 20px;display:none;gap:12px;
-      box-shadow:0 -5px 25px rgba(0,0,0,0.2);border-top:2px solid #baa27a;
-    }
-    .sticky-support a{
-      flex:1;display:inline-flex;align-items:center;justify-content:center;
-      gap:8px;padding:12px;border-radius:8px;font-size:13px;font-weight:700;color:#fff;
-    }
-    .stk-call{background:#baa27a;color:#121413 !important;}
-    .stk-dir{background:#2c2925;border:1px solid rgba(255,255,255,0.1);}
+    /* ===== MOBİL ALT SABİT DÖNÜŞÜM BARI ===== */
+    .sticky-bar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 999; background: rgba(15,23,42,0.96); backdrop-filter: blur(10px); padding: 12px 20px; display: none; gap: 12px; box-shadow: 0 -5px 25px rgba(0,0,0,0.15); border-top: 2px solid var(--accent); }
+    .sticky-bar a { flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px; border-radius: 6px; font-size: 13px; font-weight: 700; color: var(--white); }
+    .stk-call { background: var(--accent); color: var(--primary) !important; }
+    .stk-wp { background: #25D366; }
 
-    /* ===== REVEAL ANIMATION ===== */
-    .reveal{opacity:0;transform:translateY(30px);transition:all 0.8s ease}
-    .reveal.active{opacity:1;transform:translateY(0)}
-    .reveal-delay-1{transition-delay:0.1s}
-    .reveal-delay-2{transition-delay:0.2s}
-
-    /* ===== MEDIA QUERIES ===== */
-    @media(max-width:1024px){
-      .hero-title{font-size:52px;letter-spacing:6px}
-      .services-grid{grid-template-columns:repeat(2,1fr)}
-      .special-inner{gap:40px}
+    /* ===== RESPONSIVE MEDYA AYARLARI ===== */
+    @media(max-width: 1024px) {
+      .hero { grid-template-columns: 1fr; text-align: center; padding: 60px 24px; }
+      .hero-text p { margin: 0 auto 35px; }
+      .about-wrapper, .contact-wrapper { grid-template-columns: 1fr; gap: 40px; }
+      .grid-3, .gallery-grid, .footer-grid { grid-template-columns: 1fr; }
+      .gallery-header-box { text-align: center; }
+      .section { padding: 60px 24px; }
+      .top-bar { display: none; }
     }
-    @media(max-width:768px){
-      .navbar{padding:14px 24px}
-      .navbar.scrolled{padding:10px 24px}
-      .menu-toggle{display:flex}
-      .nav-links{
-        position:fixed;top:0;right:-100%;width:280px;height:100vh;
-        background:#121413;flex-direction:column;justify-content:center;
-        gap:24px;padding:40px;box-shadow:-5px 0 30px rgba(0,0,0,0.1);
-        transition:right 0.4s;
-        z-index:999;
-      }
-      .nav-links.active{right:0}
-      .nav-links a{color:#fff !important;font-size:14px}
-      
-      .hero-title{font-size:38px;letter-spacing:4px}
-      .hero-subtitle{font-size:13px;letter-spacing:4px}
-      
-      .section{padding:70px 0}
-      .container{padding:0 24px}
-      .section-title{font-size:32px}
-      
-      .services-grid,.special-inner,.contact-strip{grid-template-columns:1fr;gap:30px;}
-      .special-image{height:320px}
-      .contact-item{padding:30px 24px;border-right:none;border-bottom:1px solid rgba(0,0,0,0.06)}
-      .contact-item:last-child{border-bottom:none}
-      
-      .footer-inner,.footer-bottom{flex-direction:column;text-align:center;gap:20px}
-      .sticky-support{display:flex}
-      .footer{padding-bottom:80px}
+    @media(max-width: 768px) {
+      .navbar { flex-direction: column; gap: 15px; text-align: center; padding: 15px 24px; }
+      .nav-links { display: none; }
+      .hero-text h2 { font-size: 36px; }
+      .sticky-bar { display: flex; }
+      .footer { padding-bottom: 80px; }
     }
   </style>
 </head>
-<body>
+<body class="home">
 
-  <!-- ===== NAVBAR ===== -->
+  <!-- TOP BAR (ÜST BİLGİ BARI) -->
+  <div class="top-bar">
+    <div class="top-info">
+      <a href="https://maps.app.goo.gl/APKeu1kPtfjrbSRX9" target="_blank" rel="noopener"><i class="fa-solid fa-location-dot"></i> Veysel Karani, Abdullah Balak Cd. no:10/A, Haliliye/Şanlıurfa</a>
+      <a href="tel:+905061481626"><i class="fa-solid fa-phone"></i> 0506 148 16 26</a>
+    </div>
+    <div class="top-social">
+      <a href="#" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+  </div>
+
+  <!-- HEADER NAVIGATION -->
   <nav class="navbar">
     <div class="nav-logo">
-      <div>
-        <div class="nav-logo-text">TERAPİ</div>
-        <div class="nav-logo-sub">Masaj & Spa</div>
-      </div>
+      <a href="#">
+        <h1>Dt. İbrahim Garip</h1>
+        <span>DİŞ KLİNİĞİ & ESTETİK</span>
+      </a>
     </div>
     <div class="nav-links">
       <a href="#">Anasayfa</a>
-      <a href="#hizmetler">Masaj Paketleri</a>
-      <a href="#ayricaliklar">Ayrıcalıklar</a>
-      <a href="#konum">İletişim</a>
-      <a href="https://wa.me/905461074700?text=Merhaba,%20Terapi%20Masaj%20Salonu%20için%20seans%20randevusu%20almak%20istiyorum." class="nav-cta" target="_blank" rel="noopener">WhatsApp Randevu</a>
-    </div>
-    <div class="menu-toggle">
-      <span></span><span></span><span></span>
+      <a href="#hakkimda">Hakkımda</a>
+      <a href="#tedaviler">Tedaviler</a>
+      <a href="#klinik">Klinik</a>
+      <a href="#iletisim">İletişim</a>
+      <a href="https://wa.me/905061481626?text=Merhaba%20Randevu%20Almak%20İstiyorum" target="_blank" class="nav-cta">Randevu Alın</a>
     </div>
   </nav>
 
-  <!-- ===== HERO ===== -->
+  <!-- HERO BANNER -->
   <header class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-content">
-      <div class="hero-badge">📍 Mardin Artuklu</div>
-      <h1 class="hero-title">TERAPİ SPA</h1>
-      <div class="hero-subtitle">Masaj & Yenilenme Merkezi</div>
-      <div class="hero-buttons">
-        <a href="tel:+905461074700" class="btn-primary">
-          <i class="fa-solid fa-phone"></i> Hemen Bilgi Al & Ara
-        </a>
-        <a href="#hizmetler" class="btn-outline">Paketleri İncele</a>
+    <div class="hero-text">
+      <h5>GÜVENİLİR VE ESTETİK DİŞ HEKİMLİĞİ</h5>
+      <h2>Gülüşünüzle <span>Büyüleyin!</span></h2>
+      <p>Kişiye özel tedavi planlamaları, dijital gülüş tasarımı ve modern dental yaklaşımlarla sağlıklı bir ağız yapısına konforla kavuşun.</p>
+      <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+        <a href="tel:+905061481626" class="nav-cta" style="box-shadow: none;"><i class="fa-solid fa-phone"></i> Hemen Ara</a>
+        <a href="https://wa.me/905061481626?text=Merhaba%20klinik%20ve%20tedavi%20fiyatları%20hakkında%20bilgi%20alabilir%20miyim" target="_blank" class="nav-cta" style="background:#25D366; box-shadow: none;"><i class="fa-brands fa-whatsapp"></i> WhatsApp Destek</a>
+      </div>
+    </div>
+    <div class="hero-visual" style="height: 450px;">
+      <!-- DEMO İÇİN UYUMLU GÖRSEL ALANI -->
+      <div class="demo-img-placeholder">
+        <i class="fa-solid fa-user-doctor"></i>
+        <span>[ Hekim Görsel Alanı ]</span>
       </div>
     </div>
   </header>
 
-  <!-- ===== SERVICES / PAKETLER ===== -->
-  <section class="section section-dark" id="hizmetler">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Lüks Terapiler</span>
-        <h2 class="section-title">Masaj Paketleri ve Fiyatları</h2>
-        <div class="section-line"></div>
+  <!-- HAKKIMDA SEKSİYONU -->
+  <section class="section" id="hakkimda">
+    <div class="about-wrapper">
+      <div class="about-img-box" style="height: 400px;">
+        <div class="demo-img-placeholder">
+          <i class="fa-solid fa-hospital"></i>
+          <span>[ Klinik / Hekim Profil ]</span>
+        </div>
+        <div class="experience-badge">
+          <h4>7+</h4>
+          <p>Yıllık Deneyim</p>
+        </div>
       </div>
-      
-      <div class="services-grid">
-        <!-- Paket 1 -->
-        <div class="service-card reveal">
-          <div class="svc-img"><i class="fa-solid fa-hot-tub-person"></i></div>
-          <div class="svc-body">
-            <div class="svc-icon"><i class="fa-solid fa-clock"></i></div>
-            <h3>Klasik Paket</h3>
-            <p>Kasları gevşetip kan dolaşımını hızlandırarak vücuda zindelik kazandıran temel arınma terapisi.</p>
-            <div class="svc-price">2.500 ₺</div>
-            <div class="svc-note">30 Dakika Masaj + Duş</div>
-            <a href="https://wa.me/905461074700?text=Klasik%20Paket%20(30%20Dk%20-%202500%20TL)%20için%20randevu%20istiyorum." class="svc-btn" target="_blank" rel="noopener">Rezervasyon Yap</a>
-          </div>
-        </div>
+      <div class="about-text">
+        <span class="section-badge">UZMAN DİŞ HEKİMİ</span>
+        <h3>Dt. İbrahim Garip Hakkında</h3>
+        <p>Kliniğimizde, modern diş hekimliğinin getirdiği en son dijital ve estetik yaklaşımlarla kombine edilen modern tedavi yöntemleri titizlikle uygulanmaktadır.</p>
+        <p>Her hastamız için tamamen kişiselleştirilmiş ve en etkili tedavi şemalarını oluşturarak, uzun ömürlü, sağlıklı ve estetik açıdan kusursuz bir gülüşe sahip olmanızı amaçlıyoruz. Sizin konforunuz ve sağlığınız önceliğimizdir.</p>
+        <a href="https://wa.me/905061481626" target="_blank" class="nav-cta" style="display: inline-block; margin-top: 15px;">Detaylı Bilgi Alın</a>
+      </div>
+    </div>
+  </section>
 
-        <!-- Paket 2 -->
-        <div class="service-card reveal reveal-delay-1">
-          <div class="svc-img"><i class="fa-solid fa-spa"></i></div>
-          <div class="svc-body">
-            <div class="svc-icon"><i class="fa-solid fa-hand-sparkles"></i></div>
-            <h3>Medikal Paket</h3>
-            <p>Kronik ağrılara, kas sıkışmalarına ve kulunçlara yönelik derinlemesine rahatlama adımı.</p>
-            <div class="svc-price">3.000 ₺</div>
-            <div class="svc-note">45 Dk Masaj + Kese Köpük + Duş</div>
-            <a href="https://wa.me/905461074700?text=Medikal%20Paket%20(45%20Dk%20-%203000%20TL)%20için%20randevu%20istiyorum." class="svc-btn" target="_blank" rel="noopener">Rezervasyon Yap</a>
-          </div>
+  <!-- TEDAVİLER SEKSİYONU -->
+  <section class="section section-bg" id="tedaviler">
+    <div class="section-header">
+      <span class="section-badge">PROFESYONEL SAĞLIK</span>
+      <h2 class="section-title">Tedavi Yöntemlerimiz</h2>
+    </div>
+    
+    <div class="grid-3">
+      <!-- Kart 1 -->
+      <div class="treatment-card">
+        <div class="treatment-img">
+          <div class="demo-img-placeholder" style="border-radius:0;"><i class="fa-solid fa-tooth"></i></div>
         </div>
-
-        <!-- Paket 3 -->
-        <div class="service-card reveal reveal-delay-2">
-          <div class="svc-img"><i class="fa-solid fa-dumbbell"></i></div>
-          <div class="svc-body">
-            <div class="svc-icon"><i class="fa-solid fa-user-ninja"></i></div>
-            <h3>Spor Paket</h3>
-            <p>Dinamik ve sert baskılarla kaslardaki yorgunluğu ve laktik asit birikimini çözen özel seans.</p>
-            <div class="svc-price">4.000 ₺</div>
-            <div class="svc-note">60 Dk Masaj + Kese Köpük + Duş</div>
-            <a href="https://wa.me/905461074700?text=Spor%20Paket%20(60%20Dk%20-%204000%20TL)%20için%20randevu%20istiyorum." class="svc-btn" target="_blank" rel="noopener">Rezervasyon Yap</a>
-          </div>
+        <div class="treatment-body">
+          <h4>Gülüş Tasarımı</h4>
+          <p>Yüz hatlarınıza ve estetik beklentilerinize özel olarak tasarlanan mükemmel gülüş hatları.</p>
+          <a href="#" class="treatment-link">İncele <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <!-- Kart 2 -->
+      <div class="treatment-card">
+        <div class="treatment-img">
+          <div class="demo-img-placeholder" style="border-radius:0;"><i class="fa-solid fa-cubes"></i></div>
+        </div>
+        <div class="treatment-body">
+          <h4>Dental İmplant</h4>
+          <p>Eksik dişlerin yerine fonksiyonel ve estetik açıdan en doğal çözümü sunan titanyum implant uygulamaları.</p>
+          <a href="#" class="treatment-link">İncele <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <!-- Kart 3 -->
+      <div class="treatment-card">
+        <div class="treatment-img">
+          <div class="demo-img-placeholder" style="border-radius:0;"><i class="fa-solid fa-shield-halved"></i></div>
+        </div>
+        <div class="treatment-body">
+          <h4>Zirkonyum Kaplama</h4>
+          <p>Yüksek ışık geçirgenliği ile doğal dişe en yakın, estetik ve dayanıklı kaplama tedavileri.</p>
+          <a href="#" class="treatment-link">İncele <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== PREMIUM RİTÜEL ALANI ===== -->
-  <section class="special-section" id="ayricaliklar">
-    <div class="container">
-      <div class="special-inner">
-        <div class="special-image reveal">
-          <div class="special-ribbon">⭐ Premium Seçim</div>
-          <i class="fa-solid fa-gem"></i>
-        </div>
-        <div class="special-info reveal reveal-delay-1">
-          <div class="special-label">En Üst Düzey SPA Konforu</div>
-          <h2>Mix VIP Paket</h2>
-          <p>Kişiye özel, benzersiz ve eksiksiz bir yenilenme seansı arayan misafirlerimiz için tasarlandı.</p>
-          <ul class="special-features">
-            <li>
-              <span class="feat-check"><i class="fa-solid fa-check"></i></span>
-              80 Dakika Özel Terapi Seansı (Soft - Medikal - Mix Seçenekli)
-            </li>
-            <li>
-              <span class="feat-check"><i class="fa-solid fa-check"></i></span>
-              Geleneksel Derinlemesine Kese & Köpük Banyosu Terapisi
-            </li>
-            <li>
-              <span class="feat-check"><i class="fa-solid fa-check"></i></span>
-              Seans Sonrası Ferahlatıcı ve Vücudu Dinlendirici Duş Keyfi
-            </li>
-            <li>
-              <span class="feat-check"><i class="fa-solid fa-check"></i></span>
-              %100 Dezenfekte Edilmiş Steril VIP Odalar & Sıcak İkramlar
-            </li>
-          </ul>
-          <div class="masoz-cta">
-            <a href="https://wa.me/905461074700?text=Mix%20VIP%20Paket%20(80%20Dk)%20hakkında%20fiyat%20bilgisi%20ve%20randevu%20istiyorum." class="btn-primary" target="_blank" rel="noopener">
-              <i class="fa-brands fa-whatsapp"></i> Fiyat Al & Rezervasyon Yap
-            </a>
-          </div>
-        </div>
+  <!-- YORUMLAR (TESTIMONIALS) -->
+  <section class="section testimonials">
+    <div class="testi-icon"><i class="fa-solid fa-quote-left"></i></div>
+    <p class="testi-text">"Diş hekimlerine karşı ciddi bir korkum vardı fakat İbrahim Bey'in profesyonel, özverili ve sıcak yaklaşımı sayesinde tedavi sürecimi son derece konforlu ve huzurlu tamamladım. Kendisine ve ekibine sonsuz teşekkürler."</p>
+    <div class="testi-author">Memnun Hasta Yorumu</div>
+  </section>
+
+  <!-- KLİNİK GALERİSİ -->
+  <section class="section" id="klinik">
+    <div class="gallery-grid">
+      <div class="gallery-header-box">
+        <span class="section-badge">HİJYENİK ALANLAR</span>
+        <h2 class="section-title" style="font-size: 32px; margin-bottom: 15px;">Modern Diş Kliniğimiz</h2>
+        <p style="color: var(--text-muted); font-size: 14px;">En yüksek sterilizasyon standartlarında donatılmış, konforlu klinik ortamımız.</p>
+      </div>
+      <div class="gallery-item">
+        <div class="demo-img-placeholder"><i class="fa-solid fa-chair"></i><span>[ Klinik İçi Görsel 1 ]</span></div>
+      </div>
+      <div class="gallery-item">
+        <div class="demo-img-placeholder"><i class="fa-solid fa-microscope"></i><span>[ Klinik İçi Görsel 2 ]</span></div>
       </div>
     </div>
   </section>
 
-  <!-- ===== CONTACT STRIP / İLETİŞİM ŞERİDİ ===== -->
-  <div class="contact-strip" id="konum">
-    <div class="contact-item reveal">
-      <i class="fa-solid fa-map-location-dot"></i>
-      <h4>Açık Adres</h4>
-      <p>13 Mart Mah. Zafer Cad. Mardin Park Hast. Aşağısı Berfin Apt. Altı, 47200 Artuklu/Mardin</p>
-    </div>
-    <div class="contact-item reveal reveal-delay-1">
-      <i class="fa-brands fa-whatsapp"></i>
-      <h4>İletişim & Rezervasyon</h4>
-      <p><a href="tel:+905461074700">0546 107 47 00</a></p>
-    </div>
-    <div class="contact-item reveal reveal-delay-2">
-      <i class="fa-solid fa-location-arrow"></i>
-      <h4>Hızlı Yol Tarifi</h4>
-      <p><a href="https://maps.app.goo.gl/k2KrRXL6Hp143KRU8" target="_blank" rel="noopener" style="color: #baa27a; font-weight: 700;">Google Haritalarda Aç</a></p>
-    </div>
-  </div>
+  <!-- İLETİŞİM & HARİTA ALANI -->
+  <section class="section section-bg" id="iletisim">
+    <div class="contact-wrapper">
+      <div class="contact-details">
+        <span class="section-badge">BİZE ULAŞIN</span>
+        <h3>İletişim & Konum Bilgileri</h3>
+        <p style="color: var(--text-muted); margin-bottom: 40px;">Sorularınız veya randevu talepleriniz için çalışma saatleri içerisinde bizimle dilediğiniz iletişim kanalı üzerinden irtibata geçebilirsiniz.</p>
+        
+        <div class="contact-method">
+          <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="contact-info">
+            <h4>Klinik Adresi</h4>
+            <p>Veysel Karani, Abdullah Balak Caddesi no:10/A,<br>63300 Haliliye/Şanlıurfa</p>
+          </div>
+        </div>
 
-  <!-- ===== FOOTER ===== -->
+        <div class="contact-method">
+          <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+          <div class="contact-info">
+            <h4>Çalışma Saatleri</h4>
+            <p>Pazartesi - Cumartesi: 09:00 - 20:00<br><strong>Pazar: Kapalı</strong></p>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="contact-info">
+            <h4>Telefon Hattı</h4>
+            <p><a href="tel:+905061481626" style="font-weight: 700;">0506 148 16 26</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-box">
+        <!-- DOĞRU MAPS YÖNLENDİRME HARİTASI -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.123456789!2d38.8094!3d37.1674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzc3NSc1MC43Ik4gMzjCsDE2JzMwLjciRQ!5e0!3m2!1str!2str!4v1710000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div>
-          <div class="footer-logo-text">TERAPİ SPA</div>
-          <div class="footer-logo-sub">Masaj & Terapi Merkezi</div>
-        </div>
-        <div class="footer-text">
-          <p>Mardin Artuklu'da nezih, hijyenik ve profesyonel spa deneyimi.</p>
-        </div>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4 style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: var(--accent);">Dt. İbrahim Garip</h4>
+        <p style="color: #a3a2a2; font-size: 14px;">Şanlıurfa Haliliye'de modern ve estetik diş hekimliği çözümleri sunuyoruz.</p>
       </div>
-      <div class="footer-bottom">
-        <div class="copyright">
-          &copy; 2026 Terapi Masaj Salonu. Tüm Hakları Saklıdır.
-        </div>
+      <div class="footer-col">
+        <h4>HIZLI MENÜ</h4>
+        <ul class="footer-links">
+          <li><a href="#">Anasayfa</a></li>
+          <li><a href="#hakkimda">Hakkımda</a></li>
+          <li><a href="#tedaviler">Tedavi Yöntemleri</a></li>
+          <li><a href="#iletisim">İletişim Bilgileri</a></li>
+        </ul>
       </div>
+      <div class="footer-col">
+        <h4>YOL TARİFİ</h4>
+        <ul class="footer-links">
+          <li>Klinik konumuna doğrudan navigasyon başlatmak için tıklayın:</li>
+          <li><a href="https://maps.app.goo.gl/APKeu1kPtfjrbSRX9" target="_blank" rel="noopener" style="color: var(--accent); font-weight: 600;"><i class="fa-solid fa-map-pin"></i> Google Haritalarda Aç</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 - Tüm Hakları Saklıdır - Diş Hekimi İbrahim Garip</p>
     </div>
   </footer>
 
-  <!-- ===== MOBİL SABİT BUTONLAR ===== -->
-  <div class="sticky-support">
-    <a href="tel:+905461074700" class="stk-call"><i class="fa-solid fa-phone"></i> Telefon Et</a>
-    <a href="https://maps.app.goo.gl/k2KrRXL6Hp143KRU8" target="_blank" class="stk-dir"><i class="fa-solid fa-location-dot"></i> Yol Tarifi</a>
+  <!-- MOBİL ALT SABİT DÖNÜŞÜM BARI -->
+  <div class="sticky-bar">
+    <a href="tel:+905061481626" class="stk-call"><i class="fa-solid fa-phone"></i> Hemen Ara</a>
+    <a href="https://maps.app.goo.gl/APKeu1kPtfjrbSRX9" target="_blank" rel="noopener" class="stk-dir" style="background-color: var(--primary-light);"><i class="fa-solid fa-location-dot"></i> Yol Tarifi</a>
+    <a href="https://wa.me/905061481626?text=Merhaba%20Randevu%20Almak%20İstiyorum" target="_blank" rel="noopener" class="stk-wp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
   </div>
-
-  <script>
-    // Navbar scroll efekti
-    window.addEventListener('scroll', () => {
-      const navbar = document.querySelector('.navbar');
-      if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
-    });
-
-    // Mobil menü tetikleyici
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-
-    menuToggle.addEventListener('click', () => {
-      menuToggle.classList.toggle('active');
-      navLinks.classList.toggle('active');
-    });
-
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        menuToggle.classList.remove('active');
-        navLinks.classList.remove('active');
-      });
-    });
-
-    // Scroll Reveal (Kaydırma Animasyonu)
-    const revealElements = document.querySelectorAll('.reveal');
-    const revealOnScroll = () => {
-      for (let i = 0; i < revealElements.length; i++) {
-        const windowHeight = window.innerHeight;
-        const elementTop = revealElements[i].getBoundingClientRect().top;
-        if (elementTop < windowHeight - 80) {
-          revealElements[i].classList.add('active');
-        }
-      }
-    };
-    window.addEventListener('scroll', revealOnScroll);
-    window.addEventListener('load', revealOnScroll);
-  </script>
 
 </body>
 </html>
